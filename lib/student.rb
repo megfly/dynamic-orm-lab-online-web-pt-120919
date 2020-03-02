@@ -5,12 +5,12 @@ require 'interactive_record.rb'
 class Student < InteractiveRecord
   
   def self.table_name
-  	    #table_name code
+    self.to_s.downcase.pluralize
   end
   	  
-  	  def self.column_names
+  def self.column_names
   	  #column_names code
-  	  end
+  end
   	  
 	  self.column_names.each do |col_name|
 	    attr_accessor col_name.to_sym

@@ -3,7 +3,7 @@ require 'active_support/inflector'
 
 class InteractiveRecord
   
-  def Student.table_name
+  def self.table_name
     Student.to_s.downcase.pluralize
   end 
   

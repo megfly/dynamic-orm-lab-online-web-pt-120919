@@ -9,7 +9,7 @@ class Student < InteractiveRecord
   end
   	  
   def self.column_names
-  	  #column_names code
+  	
   end
   	  
 	  self.column_names.each do |col_name|

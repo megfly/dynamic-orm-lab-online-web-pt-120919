@@ -8,7 +8,6 @@ class InteractiveRecord
 	    self.send("#{property}=", value)
 	  end
   end
-
   
   def self.table_name
     self.to_s.downcase.pluralize
